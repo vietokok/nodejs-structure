@@ -1,41 +1,52 @@
 {
-	"name": "nodejs-structure",
-	"version": "1.0.0",
-	"description": "NodeJS Structure",
-	"main": "main.js",
-	"scripts": {
-		"start": "nodemon",
-		"build": "tsc",
-		"lint": "eslint \"{src,test}/**/*.ts\" --fix",
-		"format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"prepare": "husky install"
-	},
-	"keywords": [
-		"NodeJS"
-	],
-	"author": "vietokok",
-	"license": "ISC",
-	"devDependencies": {
-		"@types/express": "^4.17.13",
-		"@typescript-eslint/eslint-plugin": "^4.33.0",
-		"@typescript-eslint/parser": "^4.33.0",
-		"eslint": "^7.32.0",
-		"eslint-config-airbnb-base": "^14.2.1",
-		"eslint-config-prettier": "^8.3.0",
-		"eslint-plugin-import": "^2.24.2",
-		"eslint-plugin-prettier": "^4.0.0",
-		"husky": "^7.0.2",
-		"lint-staged": "^11.2.1",
-		"nodemon": "^2.0.13",
-		"prettier": "2.4.1",
-		"ts-node": "^10.2.1",
-		"typescript": "^4.4.3"
-	},
-	"dependencies": {
-		"express": "^4.17.1"
-	},
-	"lint-staged": {
-		"*.ts": ["npm run lint", "npm run format", "git add ."]
-	}
+  "name": "nodejs-structure",
+  "version": "1.0.0",
+  "description": "NodeJS Structure",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon",
+    "build": "tsc",
+    "lint": "eslint \"{src,test}/**/*.ts\" --fix",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "test": "jest",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "NodeJS"
+  ],
+  "author": "vietokok",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^13.2.0",
+    "@commitlint/config-conventional": "^13.2.0",
+    "@types/express": "^4.17.13",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.10.3",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.2",
+    "jest": "^27.2.5",
+    "lint-staged": "^11.2.1",
+    "nodemon": "^2.0.13",
+    "prettier": "2.4.1",
+    "ts-jest": "^27.0.5",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "npm run lint",
+      "npm run format",
+      "npm run test",
+      "git add ."
+    ]
+  }
 }
