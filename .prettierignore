@@ -1,0 +1,15 @@
+logs
+*.log
+npm-debug.log*
+node_modules/
+.eslintcache
+.env
+.env.test
+.env.production
+build/
+.eslintrc.json
+.prettierrc
+nodemon.json
+package-lock.json
+package.json
+tsconfig.json
