@@ -2,17 +2,14 @@
   "compilerOptions": {
       "target": "es5",
       "module": "commonjs",
-      "sourceMap": true,
+      "sourceMap": false,
       "outDir": "./build",
-      "rootDir": "./src",
-      /* Strict Type-Checking Options */
+      "rootDir": "./src",     
       "strict": true,
-      "noImplicitAny": true,
-      /* Module Resolution Options */
+      "noImplicitAny": true, 
       "moduleResolution": "node",
       "baseUrl": "./src",
-      "esModuleInterop": true,
-      /* Advanced Options */
+      "esModuleInterop": true,     
       "skipLibCheck": true,
       "forceConsistentCasingInFileNames": true
   },

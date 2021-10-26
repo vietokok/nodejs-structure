@@ -24,4 +24,3 @@ app.use('/', function (req, res) {
 });
 // Start server
 app.listen(5000, function () { return console.log("Server is listening on port 5000!"); });
-//# sourceMappingURL=main.js.map
